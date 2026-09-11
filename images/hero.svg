@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfdbfe"/>
+      <stop offset="0.55" stop-color="#e0ecff"/>
+      <stop offset="1" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="brick" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c2703a"/>
+      <stop offset="1" stop-color="#9a4e1f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1330" cy="170" r="90" fill="#fde047" opacity="0.9"/>
+  <circle cx="1330" cy="170" r="120" fill="#fef08a" opacity="0.35"/>
+
+  <g fill="#ffffff" opacity="0.7">
+    <ellipse cx="300" cy="150" rx="90" ry="34"/>
+    <ellipse cx="370" cy="135" rx="70" ry="30"/>
+    <ellipse cx="240" cy="135" rx="60" ry="26"/>
+    <ellipse cx="900" cy="100" rx="80" ry="30"/>
+    <ellipse cx="960" cy="88" rx="60" ry="24"/>
+  </g>
+
+  <rect y="720" width="1600" height="180" fill="#dcfce7"/>
+  <rect y="720" width="1600" height="14" fill="#bbf7d0"/>
+
+  <!-- Brick wall -->
+  <g>
+    <rect x="500" y="340" width="600" height="380" fill="url(#brick)"/>
+    <g stroke="#7c3a1d" stroke-width="3" opacity="0.5">
+      <line x1="500" y1="380" x2="1100" y2="380"/>
+      <line x1="500" y1="420" x2="1100" y2="420"/>
+      <line x1="500" y1="460" x2="1100" y2="460"/>
+      <line x1="500" y1="500" x2="1100" y2="500"/>
+      <line x1="500" y1="540" x2="1100" y2="540"/>
+      <line x1="500" y1="580" x2="1100" y2="580"/>
+      <line x1="500" y1="620" x2="1100" y2="620"/>
+      <line x1="500" y1="660" x2="1100" y2="660"/>
+      <line x1="500" y1="700" x2="1100" y2="700"/>
+    </g>
+    <g stroke="#7c3a1d" stroke-width="3" opacity="0.4">
+      <line x1="590" y1="340" x2="590" y2="380"/><line x1="680" y1="340" x2="680" y2="380"/><line x1="770" y1="340" x2="770" y2="380"/><line x1="860" y1="340" x2="860" y2="380"/><line x1="950" y1="340" x2="950" y2="380"/><line x1="1040" y1="340" x2="1040" y2="380"/>
+      <line x1="545" y1="380" x2="545" y2="420"/><line x1="635" y1="380" x2="635" y2="420"/><line x1="725" y1="380" x2="725" y2="420"/><line x1="815" y1="380" x2="815" y2="420"/><line x1="905" y1="380" x2="905" y2="420"/><line x1="995" y1="380" x2="995" y2="420"/>
+      <line x1="590" y1="420" x2="590" y2="460"/><line x1="680" y1="420" x2="680" y2="460"/><line x1="770" y1="420" x2="770" y2="460"/><line x1="860" y1="420" x2="860" y2="460"/><line x1="950" y1="420" x2="950" y2="460"/><line x1="1040" y1="420" x2="1040" y2="460"/>
+      <line x1="545" y1="460" x2="545" y2="500"/><line x1="635" y1="460" x2="635" y2="500"/><line x1="725" y1="460" x2="725" y2="500"/><line x1="815" y1="460" x2="815" y2="500"/><line x1="905" y1="460" x2="905" y2="500"/><line x1="995" y1="460" x2="995" y2="500"/>
+      <line x1="590" y1="500" x2="590" y2="540"/><line x1="680" y1="500" x2="680" y2="540"/><line x1="770" y1="500" x2="770" y2="540"/><line x1="860" y1="500" x2="860" y2="540"/><line x1="950" y1="500" x2="950" y2="540"/>
+      <line x1="545" y1="540" x2="545" y2="580"/><line x1="635" y1="540" x2="635" y2="580"/><line x1="725" y1="540" x2="725" y2="580"/><line x1="815" y1="540" x2="815" y2="580"/><line x1="905" y1="540" x2="905" y2="580"/><line x1="995" y1="540" x2="995" y2="580"/>
+      <line x1="590" y1="580" x2="590" y2="620"/><line x1="680" y1="580" x2="680" y2="620"/><line x1="770" y1="580" x2="770" y2="620"/><line x1="860" y1="580" x2="860" y2="620"/><line x1="950" y1="580" x2="950" y2="620"/>
+      <line x1="545" y1="620" x2="545" y2="660"/><line x1="635" y1="620" x2="635" y2="660"/><line x1="725" y1="620" x2="725" y2="660"/><line x1="815" y1="620" x2="815" y2="660"/><line x1="905" y1="620" x2="905" y2="660"/><line x1="995" y1="620" x2="995" y2="660"/>
+      <line x1="590" y1="660" x2="590" y2="700"/><line x1="680" y1="660" x2="680" y2="700"/><line x1="770" y1="660" x2="770" y2="700"/><line x1="860" y1="660" x2="860" y2="700"/><line x1="950" y1="660" x2="950" y2="700"/>
+    </g>
+  </g>
+
+  <!-- Scaffold -->
+  <g stroke="#475569" stroke-width="8" stroke-linecap="round">
+    <line x1="470" y1="300" x2="470" y2="730"/>
+    <line x1="1130" y1="300" x2="1130" y2="730"/>
+    <line x1="470" y1="360" x2="1130" y2="360"/>
+    <line x1="470" y1="540" x2="1130" y2="540"/>
+  </g>
+
+  <!-- Brick pile -->
+  <g>
+    <rect x="1170" y="650" width="120" height="22" fill="url(#brick)" stroke="#7c3a1d" stroke-width="2"/>
+    <rect x="1170" y="672" width="120" height="22" fill="url(#brick)" stroke="#7c3a1d" stroke-width="2"/>
+    <rect x="1170" y="694" width="120" height="22" fill="url(#brick)" stroke="#7c3a1d" stroke-width="2"/>
+  </g>
+
+  <!-- Bricklayer -->
+  <g>
+    <circle cx="800" cy="280" r="24" fill="#1f2937"/>
+    <rect x="780" y="302" width="40" height="56" rx="12" fill="#b45309"/>
+    <rect x="784" y="356" width="14" height="40" rx="7" fill="#1f2937"/>
+    <rect x="802" y="356" width="14" height="40" rx="7" fill="#1f2937"/>
+    <line x1="816" y1="320" x2="880" y2="300" stroke="#b45309" stroke-width="14" stroke-linecap="round"/>
+    <g transform="rotate(-30 880 300)">
+      <rect x="878" y="286" width="40" height="28" rx="4" fill="#94a3b8" stroke="#64748b" stroke-width="3"/>
+      <rect x="884" y="312" width="10" height="18" fill="#64748b"/>
+    </g>
+  </g>
+</svg>
