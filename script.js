@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (meta) meta.content = `${dynamicName}. Revoques, nivelación, mampostería, reparaciones y terminaciones en Capital y GBA.`;
   }
 
-  const cleanPhone = phone ? phone.replace(/[\s\-()]/g, '') : '1158055802';
+  const cleanPhone = phone ? phone.replace(/[\s\-()]/g, '') : '1167967633';
   const whatsappPhone = `549${cleanPhone}`;
   document.querySelectorAll('a[href^="tel:"]').forEach(link => { link.href = `tel:${cleanPhone}`; });
   document.querySelectorAll('[data-whatsapp]').forEach(link => {
