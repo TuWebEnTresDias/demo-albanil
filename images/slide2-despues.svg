@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
-  <rect width="800" height="500" fill="#f8fafc"/>
-  <rect x="80" y="120" width="640" height="380" fill="#fde68a"/>
-  <rect x="80" y="120" width="640" height="14" fill="#f59e0b"/>
-  <circle cx="400" cy="300" r="30" fill="#22c55e"/>
-  <path d="M384 300 l11 12 l20 -24" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="400" y="470" font-family="Arial" font-size="22" fill="#15803d" text-anchor="middle" font-weight="bold">Pared revocada y pintada</text>
-</svg>
