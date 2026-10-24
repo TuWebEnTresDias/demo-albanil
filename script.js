@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const params = new URLSearchParams(window.location.search);
-  const name = params.get('n');
-  const company = params.get('e');
+  const params = new URLSearchParams(window.__DEMO_PARAMS__ ?? window.location.search);
+  const name = params.get('n')?.trim().slice(0, 80);
+  const company = params.get('e')?.trim().slice(0, 80);
   const phone = params.get('t');
   const dynamicName = company ? `${company} | Albañilería` : name ? `${name} | Albañil` : null;
 
@@ -12,8 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (meta) meta.content = `${dynamicName}. Revoques, nivelación, mampostería, reparaciones y terminaciones en Capital y GBA.`;
   }
 
-  const cleanPhone = phone ? phone.replace(/[\s\-()]/g, '') : '1167967633';
-  const whatsappPhone = `549${cleanPhone}`;
+  const contactPhone = window.SiteSecurity.normalizePhone(phone ?? '1167967633');
+  const cleanPhone = contactPhone?.national || '';
+  const whatsappPhone = contactPhone?.whatsapp || '';
   document.querySelectorAll('a[href^="tel:"]').forEach(link => { link.href = `tel:${cleanPhone}`; });
   document.querySelectorAll('[data-whatsapp]').forEach(link => {
     const message = encodeURIComponent(`Hola, me comunico desde la página${dynamicName ? ` de ${dynamicName}` : ''}. Quiero hacer una consulta.`);
@@ -54,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const formPhone = document.getElementById('contactPhone').value.trim();
     const message = document.getElementById('contactMessage').value.trim();
     const text = [`Hola, quiero hacer una consulta desde la página.`, `Nombre: ${formName}`, `Teléfono: ${formPhone}`, message ? `Detalle: ${message}` : ''].filter(Boolean).join('\n');
-    window.open(`https://wa.me/${whatsappPhone}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+    window.open(`https://wa.me/${whatsappPhone}?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
   });
   document.querySelectorAll('#currentYear').forEach(el => { el.textContent = new Date().getFullYear(); });
 });
