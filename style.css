@@ -235,3 +235,6 @@ input:focus, textarea:focus { border-color: var(--clay); box-shadow: 0 0 0 3px r
   .button, .whatsapp-float, .site-header { transition: none; }
   .mobile-menu, .menu-toggle span { transition: none; }
 }
+
+/* Visible contact shared by personalized demos. */
+.hero-contact{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem .9rem;margin:1rem 0;font:inherit}.hero-contact>span{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;opacity:.8}.hero-contact>a{display:inline-block;color:inherit;font-size:1.125rem;font-weight:700;text-decoration:underline;text-underline-offset:.22em;padding:.3rem 0}.hero-contact>a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
