@@ -238,3 +238,24 @@ input:focus, textarea:focus { border-color: var(--clay); box-shadow: 0 0 0 3px r
 
 /* Visible contact shared by personalized demos. */
 .hero-contact{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem .9rem;margin:1rem 0;font:inherit}.hero-contact>span{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;opacity:.8}.hero-contact>a{display:inline-block;color:inherit;font-size:1.125rem;font-weight:700;text-decoration:underline;text-underline-offset:.22em;padding:.3rem 0}.hero-contact>a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+
+
+/* Acabado visual: curvas discretas y sombras cálidas, sin perder el carácter de obra. */
+.service-card,.contact-form-wrap{border-radius:15px}
+.service-card{box-shadow:0 10px 24px rgba(40,37,33,.08);transition:transform .24s var(--ease),box-shadow .24s var(--ease)}
+.service-card-featured{box-shadow:6px 6px 0 var(--wood),0 18px 34px rgba(40,37,33,.16)}
+.service-card:hover,.service-card:focus-within{transform:translateY(-4px);box-shadow:0 18px 32px rgba(40,37,33,.15)}
+.service-card-featured:hover,.service-card-featured:focus-within{box-shadow:6px 8px 0 var(--wood),0 22px 38px rgba(40,37,33,.2)}
+.image-frame{border-radius:11px;box-shadow:10px 10px 0 var(--wood),0 22px 38px rgba(40,37,33,.16);transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.image-frame:hover{transform:rotate(.4deg) translateY(-3px);box-shadow:10px 12px 0 var(--wood),0 26px 44px rgba(40,37,33,.2)}
+.reference-image img{border-radius:10px;box-shadow:8px 8px 0 var(--cement),0 18px 32px rgba(40,37,33,.12);transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.reference-image:hover img{transform:rotate(-.4deg) translateY(-3px);box-shadow:8px 10px 0 var(--cement),0 22px 36px rgba(40,37,33,.18)}
+.contact-form-wrap{box-shadow:0 16px 34px rgba(40,37,33,.1)}
+input,textarea{border-radius:8px;transition:border-color .2s ease,box-shadow .2s ease}
+.button,.nav-cta,.mobile-cta{border-radius:7px}
+.button-primary{box-shadow:4px 4px 0 var(--wood),0 10px 22px rgba(40,37,33,.12)}
+.whatsapp-float{box-shadow:0 10px 24px rgba(40,37,33,.2)}
+@media(prefers-reduced-motion:reduce){
+  .service-card,.image-frame,.reference-image img,input,textarea{transition:none}
+  .service-card:hover,.service-card:focus-within,.image-frame:hover,.reference-image:hover img{transform:none}
+}
